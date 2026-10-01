@@ -65,6 +65,11 @@ nav a:hover {
     text-decoration-style: wavy;
 }
 
+nav a.active {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+
 main {
     padding: 0 0 40px 0;
 }
@@ -181,4 +186,20 @@ a:hover {
 footer {
     padding: 40px 0;
     font-size: 0.9rem;
+}
+
+.copy-btn {
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    padding: 4px 8px;
+    margin-left: 8px;
+    background-color: transparent;
+    border: 1px solid var(--line-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.copy-btn:hover {
+    background-color: var(--line-color);
 }
