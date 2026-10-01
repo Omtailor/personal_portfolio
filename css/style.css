@@ -120,6 +120,46 @@ article {
     margin-top: 8px;
 }
 
+.skill-group {
+    margin-bottom: 24px;
+}
+
+.skill-group h3 {
+    font-size: 1.3rem;
+    margin-bottom: 8px;
+}
+
+.skill-group p {
+    margin-bottom: 0;
+}
+
+.timeline-entry {
+    position: relative;
+    padding-left: 24px;
+    margin-bottom: 24px;
+    border-left: 2px solid var(--line-color);
+}
+
+.timeline-entry::before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: 8px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: var(--margin-line-color);
+}
+
+.timeline-entry h3 {
+    font-size: 1.3rem;
+    margin-bottom: 4px;
+}
+
+.timeline-entry p {
+    margin-bottom: 0;
+}
+
 address {
     font-style: normal;
 }
