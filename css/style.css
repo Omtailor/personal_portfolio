@@ -101,6 +101,25 @@ article {
     margin-bottom: 32px;
 }
 
+.project-entry {
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+    border-bottom: 1px dashed var(--line-color);
+}
+
+.project-entry:last-child {
+    border-bottom: none;
+}
+
+.tech-stack {
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.project-links {
+    margin-top: 8px;
+}
+
 address {
     font-style: normal;
 }
