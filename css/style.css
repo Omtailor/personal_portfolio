@@ -7,6 +7,13 @@
     --body-font: 'Inter', sans-serif;
 }
 
+[data-theme="dark"] {
+    --bg-color: #1a1a1a;
+    --text-color: #e8e8e8;
+    --margin-line-color: #ff6b6b;
+    --line-color: #444;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -121,6 +128,10 @@ article {
     color: #666;
 }
 
+[data-theme="dark"] .tech-stack {
+    color: #999;
+}
+
 .project-links {
     margin-top: 8px;
 }
@@ -154,6 +165,7 @@ article {
     height: 8px;
     border-radius: 50%;
     background-color: var(--margin-line-color);
+    border: 1px solid var(--text-color);
 }
 
 .timeline-entry h3 {
@@ -202,4 +214,69 @@ footer {
 
 .copy-btn:hover {
     background-color: var(--line-color);
+}
+
+.theme-btn {
+    font-family: var(--body-font);
+    font-size: 0.8rem;
+    padding: 4px 12px;
+    background-color: transparent;
+    border: 1px solid var(--line-color);
+    color: var(--text-color);
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.theme-btn:hover {
+    background-color: var(--line-color);
+}
+
+[data-theme="dark"] .copy-btn:hover,
+[data-theme="dark"] .theme-btn:hover {
+    background-color: #555;
+}
+
+[data-theme="dark"] .copy-btn,
+[data-theme="dark"] .theme-btn {
+    color: var(--text-color);
+}
+
+/* Responsive design - mobile first */
+@media (max-width: 600px) {
+    body {
+        padding-left: 40px;
+    }
+
+    body::before {
+        left: 40px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    nav li {
+        width: 100%;
+    }
+
+    nav a {
+        display: block;
+    }
+
+    .theme-btn {
+        width: 100%;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
 }
