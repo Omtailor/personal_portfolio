@@ -49,19 +49,20 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 30px;
     flex-wrap: wrap;
 }
 
 nav a {
     color: var(--text-color);
     text-decoration: none;
-    font-family: var(--heading-font);
-    font-size: 1.2rem;
+    font-family: var(--body-font);
+    font-size: 1rem;
 }
 
 nav a:hover {
     text-decoration: underline;
+    text-decoration-style: wavy;
 }
 
 main {
@@ -78,8 +79,8 @@ h1, h2, h3 {
 }
 
 h1 {
-    font-size: 3rem;
-    margin-bottom: 16px;
+    font-size: 6rem;
+    margin-bottom: 24px;
 }
 
 h2 {
@@ -106,6 +107,16 @@ address {
 
 address p {
     margin-bottom: 8px;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
 }
 
 footer {
