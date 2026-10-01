@@ -87,4 +87,4 @@ To enable GitHub Pages from the main branch:
 
 ---
 
-&copy; 2024 Om's Portfolio. All rights reserved.
+&copy; 2026 Om's Portfolio. All rights reserved.
