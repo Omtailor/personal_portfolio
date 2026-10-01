@@ -1,17 +1,19 @@
 :root {
     --bg-color: #fdfcf7;
-    --text-color: #2b2b2b;
-    --margin-line-color: #ff6b6b;
-    --line-color: #a8a8a8;
+    --text-color: #1a1a1a;
+    --margin-line-color: #cc3333;
+    --line-color: #888;
     --heading-font: 'Caveat', cursive;
     --body-font: 'Inter', sans-serif;
+    --focus-color: #005fcc;
 }
 
 [data-theme="dark"] {
     --bg-color: #1a1a1a;
-    --text-color: #e8e8e8;
+    --text-color: #f5f5f5;
     --margin-line-color: #ff6b6b;
-    --line-color: #444;
+    --line-color: #555;
+    --focus-color: #66b3ff;
 }
 
 * {
@@ -77,6 +79,13 @@ nav a.active {
     text-decoration-style: wavy;
 }
 
+nav a:focus,
+a:focus,
+button:focus {
+    outline: 2px solid var(--focus-color);
+    outline-offset: 2px;
+}
+
 main {
     padding: 0 0 40px 0;
 }
@@ -101,7 +110,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 8px;
 }
 
@@ -125,11 +134,11 @@ article {
 
 .tech-stack {
     font-size: 0.9rem;
-    color: #666;
+    color: #555;
 }
 
 [data-theme="dark"] .tech-stack {
-    color: #999;
+    color: #aaa;
 }
 
 .project-links {
@@ -140,8 +149,11 @@ article {
     margin-bottom: 24px;
 }
 
-.skill-group h3 {
+.skill-group strong {
+    font-family: var(--heading-font);
     font-size: 1.3rem;
+    font-weight: normal;
+    display: block;
     margin-bottom: 8px;
 }
 
@@ -169,7 +181,6 @@ article {
 }
 
 .timeline-entry h3 {
-    font-size: 1.3rem;
     margin-bottom: 4px;
 }
 
@@ -239,6 +250,21 @@ footer {
 [data-theme="dark"] .copy-btn,
 [data-theme="dark"] .theme-btn {
     color: var(--text-color);
+}
+
+.skip-link {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: var(--text-color);
+    color: var(--bg-color);
+    padding: 8px;
+    z-index: 100;
+    transition: top 0.3s;
+}
+
+.skip-link:focus {
+    top: 0;
 }
 
 /* Responsive design - mobile first */

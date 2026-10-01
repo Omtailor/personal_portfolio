@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Om's portfolio - Third year B.Tech student in Artificial Intelligence and Machine Learning at TCET, Mumbai. CGPA 9.55. Looking for software engineering and full stack internships.">
+    <meta property="og:title" content="Om's Portfolio">
+    <meta property="og:description" content="Third year B.Tech student in AI and ML at TCET, Mumbai. CGPA 9.55. Building full stack AI products.">
+    <meta property="og:type" content="website">
     <title>Om's Portfolio</title>
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>👨‍💻</text></svg>">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to content</a>
     <header>
-        <nav>
+        <nav aria-label="Main navigation">
             <ul>
                 <li><a href="#hero">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -20,12 +25,12 @@
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
                 <li><a href="#contact">Contact</a></li>
-                <li><button id="theme-toggle" class="theme-btn">Dark</button></li>
+                <li><button id="theme-toggle" class="theme-btn" aria-label="Toggle dark mode">Dark</button></li>
             </ul>
         </nav>
     </header>
 
-    <main>
+    <main id="main-content">
         <section id="hero">
             <h1>Om</h1>
             <p>Third year AI and ML student at TCET, Mumbai. I build full stack AI products.</p>
@@ -44,42 +49,42 @@
                 <h3>NutriAI</h3>
                 <p>AI nutrition and meal planning platform. Generates 3 day Indian meal plans with Gemini 2.5 Flash, calculates calorie targets, logs cheat meals from image or text, and builds grocery lists. Every AI response is validated with Pydantic. Built solo and deployed.</p>
                 <p class="tech-stack">Stack: Django, React, PostgreSQL (Neon), Gemini API, Pydantic</p>
-                <p class="project-links"><a href="https://diet-planner-three-sable.vercel.app/login" target="_blank">Live</a> · <a href="https://github.com/Omtailor/diet_planner" target="_blank">GitHub</a></p>
+                <p class="project-links"><a href="https://diet-planner-three-sable.vercel.app/login" target="_blank" rel="noopener noreferrer">Live</a> · <a href="https://github.com/Omtailor/diet_planner" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </article>
             <article class="project-entry">
                 <h3>TripPlanner</h3>
                 <p>AI itinerary generator. Creates day by day plans with meals and cost breakdowns, cut AI hallucinations by about 40 percent using Pydantic validators, with rate limiting and a model fallback chain. 25+ users. Built solo and deployed.</p>
                 <p class="tech-stack">Stack: Django REST Framework, React, SQL, Pydantic, Gemini API</p>
-                <p class="project-links"><a href="https://tripplanner-tawny.vercel.app/auth" target="_blank">Live</a> · <a href="https://github.com/Omtailor/tripplanner" target="_blank">GitHub</a></p>
+                <p class="project-links"><a href="https://tripplanner-tawny.vercel.app/auth" target="_blank" rel="noopener noreferrer">Live</a> · <a href="https://github.com/Omtailor/tripplanner" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </article>
             <article class="project-entry">
                 <h3>Financial Crime Investigation Agent</h3>
                 <p>Team project building an AML detection system on IBM's dataset. My role: backend platform and integration.</p>
                 <p class="tech-stack">Stack: FastAPI, MySQL, LangGraph, React</p>
-                <p class="project-links"><a href="https://github.com/username/Financial-Crime-Investigation-Agent" target="_blank">GitHub</a></p>
+                <p class="project-links"><a href="https://github.com/username/Financial-Crime-Investigation-Agent" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </article>
         </section>
 
         <section id="skills">
             <h2>Skills</h2>
             <div class="skill-group">
-                <h3>Languages</h3>
+                <strong>Languages</strong>
                 <p>C, C++, Python, JavaScript, Java</p>
             </div>
             <div class="skill-group">
-                <h3>Web</h3>
+                <strong>Web</strong>
                 <p>HTML, CSS, React, Tailwind CSS, Django, Django REST Framework, FastAPI</p>
             </div>
             <div class="skill-group">
-                <h3>Data and AI</h3>
+                <strong>Data and AI</strong>
                 <p>MongoDB, SQL, Pydantic, LLM APIs, NumPy, Pandas, Scikit learn</p>
             </div>
             <div class="skill-group">
-                <h3>Core CS</h3>
+                <strong>Core CS</strong>
                 <p>Data Structures, Algorithms, OOP, Operating Systems, DBMS</p>
             </div>
             <div class="skill-group">
-                <h3>Tools</h3>
+                <strong>Tools</strong>
                 <p>Git, GitHub, Postman</p>
             </div>
         </section>
@@ -108,9 +113,9 @@
             <h2>Contact</h2>
             <p>I am open to internship opportunities and collaborations. Feel free to reach out!</p>
             <address>
-                <p><a href="mailto:omtailork@gmail.com" id="email-link">omtailork@gmail.com</a> <button id="copy-email-btn" class="copy-btn">Copy email</button></p>
-                <p><a href="https://www.linkedin.com/in/om-tailor-ba72b8310/" target="_blank">LinkedIn</a></p>
-                <p><a href="https://github.com/Omtailor" target="_blank">GitHub</a></p>
+                <p><a href="mailto:omtailork@gmail.com" id="email-link">omtailork@gmail.com</a> <button id="copy-email-btn" class="copy-btn" aria-label="Copy email address">Copy email</button></p>
+                <p><a href="https://www.linkedin.com/in/om-tailor-ba72b8310/" target="_blank" rel="noopener noreferrer">LinkedIn</a></p>
+                <p><a href="https://github.com/Omtailor" target="_blank" rel="noopener noreferrer">GitHub</a></p>
             </address>
         </section>
     </main>
